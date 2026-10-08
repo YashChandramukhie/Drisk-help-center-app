@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap")
+  layer(base);
+
+@import "tailwindcss";
+
+@theme {
+  /* DRisk screen breakpoints */
+  --breakpoint-*: initial;
+  --breakpoint-xs: 428px;
+  --breakpoint-sm: 640px;
+  --breakpoint-md: 744px;
+  --breakpoint-lg: 1280px;
+  --breakpoint-xl: 1380px;
+  --breakpoint-2xl: 1440px;
+  --breakpoint-3xl: 1800px;
+
+  /* Fonts */
+  --font-base: "Inter", sans-serif;
+  --font-sans: "Inter", sans-serif;
+
+  /* Primary colours */
+  --color-P-50: #eef3ff;
+  --color-P-100: #d9e6ff;
+  --color-P-200: #bbcffe;
+  --color-P-300: #8aadfa;
+  --color-P-400: #5888ef;
+  --color-P-500: #3569d0;
+  --color-P-600: #2856b8;
+  --color-P-700: #1e4092;
+  --color-P-800: #172e6a;
+  --color-P-900: #0f1e40;
+
+  /* Neutral colours */
+  --color-N-25: #f8fafc;
+  --color-N-50: #f8fafc;
+  --color-N-100: #f1f5f9;
+  --color-N-200: #e2e8f0;
+  --color-N-300: #cad5e2;
+  --color-N-400: #90a1b9;
+  --color-N-500: #64748e;
+  --color-N-600: #45556c;
+  --color-N-700: #314158;
+  --color-N-800: #1d293d;
+  --color-N-900: #0f172b;
+
+  --color-white: #ffffff;
+  --color-black: #0f1e40;
+
+  /* Desktop headings */
+  --text-h1: 42px;
+  --text-h1--line-height: 56px;
+  --text-h1--letter-spacing: -0.02em;
+
+  --text-h2: 30px;
+  --text-h2--line-height: 44px;
+  --text-h2--letter-spacing: -0.02em;
+
+  --text-h3: 24px;
+  --text-h3--line-height: 32px;
+  --text-h3--letter-spacing: -0.02em;
+
+  /* Mobile headings */
+  --text-h1-m: 37px;
+  --text-h1-m--line-height: 48px;
+  --text-h1-m--letter-spacing: -0.02em;
+
+  --text-h2-m: 28px;
+  --text-h2-m--line-height: 32px;
+  --text-h2-m--letter-spacing: -0.02em;
+
+  --text-h3-m: 19px;
+  --text-h3-m--line-height: 24px;
+  --text-h3-m--letter-spacing: -0.02em;
+
+  /* Shadows */
+  --shadow-base:
+    0px 0px 5px rgba(0, 0, 0, 0.05),
+    0px 1px 2px rgba(0, 0, 0, 0.15);
+  --shadow-md:
+    0px 4px 6px -1px rgba(0, 0, 0, 0.1),
+    0px 2px 4px -1px rgba(0, 0, 0, 0.06);
+}
+
+@layer base {
+  html {
+    font-family: var(--font-base);
+  }
+
+  body {
+    margin: 0;
+    background: var(--color-N-50);
+    color: var(--color-N-700);
+    font-size: 16px;
+    line-height: 1.5;
+  }
+
+  h1,
+  h2,
+  h3,
+  h4 {
+    color: var(--color-N-900);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--color-P-600);
+    outline-offset: 4px;
+  }
+
+  button:not(:disabled),
+  a[href],
+  summary {
+    cursor: pointer;
+  }
+
+  button:disabled {
+    cursor: not-allowed;
+  }
+
+  ::selection {
+    background: var(--color-P-100);
+    color: var(--color-P-900);
+  }
+}
