@@ -1,4 +1,6 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# DRisk Help Centre
+
+This is a static, JSON-driven Next.js help centre for the DRisk compliance platform.
 
 ## Getting Started
 
@@ -14,11 +16,33 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Open [http://localhost:3000](http://localhost:3000) in a browser.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+Run the checks and create a production static export:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run lint
+npm run build
+```
+
+The build writes the deployable site to `out/`. To preview that export, use a static file server from the project directory, for example `npx serve out`. Do not use `npm run start` for the static export; that command expects a server build.
+
+## Content and screenshots
+
+The source content lives in `data/help-centre.json`, outside `public/`. `lib/content.ts` validates the structure during the build and exposes only articles whose `status` is `published` to public-facing features. Draft content can therefore be kept for review without appearing in the site.
+
+Each article has a stable `id`, unique `slug`, `collectionId`, `type`, title, summary, keywords, `draft` or `published` status, related article IDs, content owner, review date, and optional sections. Sections contain paragraph, heading, ordered-list, bullet-list, or image blocks. Images require descriptive alt text and can include a caption.
+
+To add an article, add its metadata and reviewed content to `data/help-centre.json`; put approved screenshots in `public/` and reference their paths in an image block. Keep new articles as `draft` until the product/content owner has reviewed the wording and screenshots. Change the status to `published` only after that review, then run lint and build again.
+
+Content changes are static-site changes: rebuild the project, check the generated `out/` directory, and redeploy that directory through the eventual hosting process.
+
+## Open decisions
+
+The approved logo, support contact, final deployment address/hosting arrangement, platform integration approach, and the separate Control Activities feature still need product-team confirmation. They are intentionally not invented in the current site.
+
+The homepage is implemented in `app/page.tsx` and reads its content from `data/help-centre.json`.
+
 
 ## Learn More
 

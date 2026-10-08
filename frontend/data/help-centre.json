@@ -1,0 +1,56 @@
+{
+  "site": {
+    "name": "DRisk",
+    "title": "Help Centre",
+    "heading": "How can we help you?",
+    "description": "Explore guidance for your compliance journey with DRisk."
+  },
+  "collections": [
+    {
+      "id": "getting-started",
+      "title": "Getting Started",
+      "description": "Set up your organisation and begin using DRisk."
+    },
+    {
+      "id": "platform-basics",
+      "title": "Platform Basics",
+      "description": "Learn about navigation, terminology, roles and permissions."
+    },
+    {
+      "id": "frameworks-and-requirements",
+      "title": "Frameworks and Requirements",
+      "description": "Select frameworks and understand applicable requirements."
+    },
+    {
+      "id": "controls-and-activities",
+      "title": "Controls and Activities",
+      "description": "Create, assign and manage organisational controls."
+    },
+    {
+      "id": "policies-and-evidence",
+      "title": "Policies and Evidence",
+      "description": "Maintain documented information supporting compliance."
+    },
+    {
+      "id": "assessments-and-tests",
+      "title": "Assessments and Tests",
+      "description": "Evaluate whether controls are implemented and effective."
+    },
+    {
+      "id": "readiness-and-audits",
+      "title": "Readiness and Audits",
+      "description": "Identify gaps and prepare for audit activities."
+    },
+    {
+      "id": "settings-and-administration",
+      "title": "Settings and Administration",
+      "description": "Manage users, roles, notifications and organisation settings."
+    },
+    {
+      "id": "troubleshooting-and-support",
+      "title": "Troubleshooting and Support",
+      "description": "Resolve common issues or obtain additional assistance."
+    }
+  ],
+  "articles": []
+}
