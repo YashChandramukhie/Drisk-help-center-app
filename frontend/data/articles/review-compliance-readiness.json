@@ -1,0 +1,62 @@
+{
+  "id": "review-compliance-readiness",
+  "slug": "review-compliance-readiness",
+  "collectionId": "readiness-and-audits",
+  "type": "instructional",
+  "title": "Review compliance readiness",
+  "summary": "A draft guide for reviewing the current compliance position and identifying follow-up work.",
+  "keywords": [
+    "readiness",
+    "review",
+    "gaps",
+    "audit",
+    "compliance"
+  ],
+  "status": "draft",
+  "relatedArticleIds": [
+    "upload-and-link-evidence",
+    "understand-framework-requirements"
+  ],
+  "contentOwner": "To be assigned",
+  "lastReviewedDate": null,
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A readiness review brings together the current information about requirements, controls, and evidence so an organisation can identify what is complete, what needs attention, and what should be confirmed before an audit or internal review."
+        }
+      ]
+    },
+    {
+      "id": "steps",
+      "title": "Steps",
+      "blocks": [
+        {
+          "type": "ordered-list",
+          "items": [
+            "Open the approved DRisk area for reviewing readiness information.",
+            "Select the relevant framework, scope, or review context.",
+            "Review items that have controls and supporting evidence.",
+            "Identify gaps, incomplete work, or evidence that needs an owner or update.",
+            "Record follow-up actions using the approved organisational process.",
+            "Share the review with the responsible compliance or audit stakeholders."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "expected-result",
+      "title": "Expected result",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You should have a reviewed list of strengths, gaps, and follow-up actions. The product-specific readiness statuses and calculations must be confirmed before this sample is published."
+        }
+      ]
+    }
+  ]
+}
+

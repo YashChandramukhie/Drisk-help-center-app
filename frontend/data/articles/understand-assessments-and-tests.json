@@ -1,0 +1,64 @@
+{
+  "id": "understand-assessments-and-tests",
+  "slug": "understand-assessments-and-tests",
+  "collectionId": "assessments-and-tests",
+  "type": "concept",
+  "title": "Understand assessments and tests",
+  "summary": "An introduction to evaluating controls against defined criteria and recording review conclusions.",
+  "keywords": [
+    "assessment",
+    "test",
+    "control",
+    "evidence",
+    "evaluation"
+  ],
+  "status": "draft",
+  "relatedArticleIds": [
+    "drisk-platform-terminology",
+    "upload-and-link-evidence",
+    "review-compliance-readiness"
+  ],
+  "contentOwner": null,
+  "lastReviewedDate": null,
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "An assessment evaluates information against defined criteria. A control test examines a particular aspect of a control, such as whether an activity occurred or whether its result met the intended expectation."
+        },
+        {
+          "type": "paragraph",
+          "text": "Recording that a control exists does not establish that it operates effectively. An assessment should explain what was evaluated, which information was examined and how the conclusion was reached."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "title": "How it works in DRisk",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Confirm whether assessments and tests are separate features, which records they evaluate and how results are recorded. Replace this draft section with the confirmed workflow before publication."
+        },
+        {
+          "type": "paragraph",
+          "text": "Do not describe a test as automated unless the product team confirms its actual operation. A favourable result for one test does not necessarily establish that a whole requirement is satisfied."
+        }
+      ]
+    },
+    {
+      "id": "example",
+      "title": "Example",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A reviewer examines a completed access-review record and checks whether the designated population was included, whether decisions were recorded and whether identified changes were followed up. The conclusion depends on the agreed criteria and the quality of the available evidence."
+        }
+      ]
+    }
+  ]
+}
+

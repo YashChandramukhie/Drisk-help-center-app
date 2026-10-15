@@ -1,7 +1,13 @@
 import { CollectionCard } from "../components/collection-card";
 import { SiteFooter } from "../components/site-footer";
 import { SiteHeader } from "../components/site-header";
-import { getCollectionArticleCount, helpCentre } from "../lib/content";
+import { DraftPreviewNotice } from "../components/draft-preview-notice";
+import {
+  getCollectionArticleCount,
+  getVisibleArticlesForCollection,
+  helpCentre,
+  visibleArticles,
+} from "../lib/content";
 
 export default function Home() {
   const { site, collections } = helpCentre;
@@ -15,9 +21,10 @@ export default function Home() {
         Skip to content
       </a>
 
-      <SiteHeader site={site} />
+      <SiteHeader site={site} articles={visibleArticles} />
 
       <main id="main-content" className="flex-1">
+        <DraftPreviewNotice />
         <section
           aria-labelledby="welcome-heading"
           className="border-b border-P-100 bg-P-50"
@@ -70,6 +77,7 @@ export default function Home() {
                   key={collection.id}
                   collection={collection}
                   articleCount={getCollectionArticleCount(collection.id)}
+                  articles={getVisibleArticlesForCollection(collection.id)}
                 />
               ))}
             </div>

@@ -1,0 +1,51 @@
+{
+  "id": "map-controls-to-requirements",
+  "slug": "map-controls-to-requirements",
+  "collectionId": "controls-and-activities",
+  "type": "instructional",
+  "title": "Map controls to requirements",
+  "summary": "A draft guide for connecting controls with the framework requirements they help address.",
+  "keywords": [
+    "map",
+    "controls",
+    "requirements",
+    "framework"
+  ],
+  "status": "draft",
+  "relatedArticleIds": [
+    "understand-framework-requirements",
+    "create-customer-defined-control",
+    "upload-and-link-evidence"
+  ],
+  "contentOwner": "To be assigned",
+  "lastReviewedDate": null,
+  "sections": [
+    {
+      "id": "why-it-matters",
+      "title": "Why it matters",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A clear mapping helps teams explain how their controls address requirements and can make later evidence and readiness reviews easier. The strength and direction of a mapping should be reviewed by the responsible compliance owner."
+        }
+      ]
+    },
+    {
+      "id": "steps",
+      "title": "Steps",
+      "blocks": [
+        {
+          "type": "ordered-list",
+          "items": [
+            "Open the requirement you want to address.",
+            "Review the controls available for mapping in your environment.",
+            "Select the control or controls that meaningfully address the requirement.",
+            "Save the mapping using the approved DRisk workflow.",
+            "Check the result and record any gaps or follow-up actions."
+          ]
+        }
+      ]
+    }
+  ]
+}
+

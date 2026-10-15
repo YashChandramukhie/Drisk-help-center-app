@@ -1,7 +1,12 @@
 import Link from "next/link";
-import type { HelpCentreData } from "../lib/content";
+import { isDevelopmentPreview } from "../lib/content";
+import type { HelpCentreArticle, HelpCentreData } from "../lib/content";
+import { SearchBar } from "./search-bar";
 
-export function SiteHeader({ site }: { site: HelpCentreData["site"] }) {
+export function SiteHeader({ site, articles }: {
+  site: HelpCentreData["site"];
+  articles: HelpCentreArticle[];
+}) {
   return (
     <header className="border-b border-N-200 bg-white">
       <div className="mx-auto flex max-w-6xl flex-wrap items-center justify-between gap-4 px-6 py-5 md:px-10">
@@ -11,11 +16,9 @@ export function SiteHeader({ site }: { site: HelpCentreData["site"] }) {
           <span className="text-sm font-medium text-N-600">{site.title}</span>
         </Link>
 
-        <nav aria-label="Main navigation">
-          <Link href="#collections" className="text-sm font-semibold text-P-600 hover:underline">
-            Browse collections
-          </Link>
-        </nav>
+        <div className="flex w-full items-center justify-end md:w-auto">
+          <SearchBar articles={articles} showDrafts={isDevelopmentPreview} />
+        </div>
       </div>
     </header>
   );

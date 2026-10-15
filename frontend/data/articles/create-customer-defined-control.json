@@ -1,0 +1,51 @@
+{
+  "id": "create-customer-defined-control",
+  "slug": "create-customer-defined-control",
+  "collectionId": "controls-and-activities",
+  "type": "instructional",
+  "title": "Create a customer-defined control",
+  "summary": "A draft guide for documenting a control defined by an organisation rather than supplied as part of a confirmed framework.",
+  "keywords": [
+    "control",
+    "customer-defined",
+    "custom control",
+    "controls"
+  ],
+  "status": "draft",
+  "relatedArticleIds": [
+    "understand-framework-requirements",
+    "map-controls-to-requirements",
+    "upload-and-link-evidence"
+  ],
+  "contentOwner": "To be assigned",
+  "lastReviewedDate": null,
+  "sections": [
+    {
+      "id": "purpose",
+      "title": "Purpose",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A customer-defined control can document an organisation-specific measure that is important to its compliance programme. This sample does not prescribe the fields or workflow used by DRisk."
+        }
+      ]
+    },
+    {
+      "id": "steps",
+      "title": "Steps",
+      "blocks": [
+        {
+          "type": "ordered-list",
+          "items": [
+            "Confirm that the organisation needs a control that is not already represented by an available control.",
+            "Define the outcome the control is intended to achieve.",
+            "Document the responsible owner, frequency, and evidence expectations according to your internal process.",
+            "Create the control using the approved DRisk workflow.",
+            "Review the saved control with the relevant compliance owner."
+          ]
+        }
+      ]
+    }
+  ]
+}
+

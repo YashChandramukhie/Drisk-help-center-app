@@ -52,5 +52,19 @@
       "description": "Resolve common issues or obtain additional assistance."
     }
   ],
-  "articles": []
+  "articleFiles": [
+    "articles/welcome-to-drisk.json",
+    "articles/drisk-platform-terminology.json",
+    "articles/navigate-drisk-dashboard.json",
+    "articles/understand-users-roles-permissions.json",
+    "articles/view-and-select-compliance-framework.json",
+    "articles/understand-framework-requirements.json",
+    "articles/create-customer-defined-control.json",
+    "articles/map-controls-to-requirements.json",
+    "articles/upload-and-link-evidence.json",
+    "articles/review-compliance-readiness.json",
+    "articles/understand-assessments-and-tests.json",
+    "articles/manage-organisation-settings.json",
+    "articles/report-an-issue.json"
+  ]
 }
