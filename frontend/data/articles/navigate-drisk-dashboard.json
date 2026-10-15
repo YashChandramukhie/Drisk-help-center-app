@@ -1,0 +1,60 @@
+{
+  "id": "navigate-drisk-dashboard",
+  "slug": "navigate-drisk-dashboard",
+  "collectionId": "platform-basics",
+  "type": "instructional",
+  "title": "Navigate the DRisk dashboard",
+  "summary": "A draft guide to finding the main areas of the DRisk dashboard.",
+  "keywords": [
+    "dashboard",
+    "navigation",
+    "overview",
+    "platform basics"
+  ],
+  "status": "draft",
+  "relatedArticleIds": [
+    "drisk-platform-terminology",
+    "understand-users-roles-permissions"
+  ],
+  "contentOwner": "To be assigned",
+  "lastReviewedDate": null,
+  "sections": [
+    {
+      "id": "purpose",
+      "title": "Purpose",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Use the dashboard to orient yourself and find the areas your organisation has enabled. This sample does not name specific controls or menu items because the approved interface details are not yet available."
+        }
+      ]
+    },
+    {
+      "id": "steps",
+      "title": "Steps",
+      "blocks": [
+        {
+          "type": "ordered-list",
+          "items": [
+            "Sign in using the access method provided by your organisation.",
+            "Review the information shown on the first page after sign-in.",
+            "Identify the navigation area that leads to frameworks, requirements, controls, evidence, or readiness information.",
+            "Open the area relevant to the task you need to complete.",
+            "Use the Help Centre article for that area when more detail is available."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "expected-result",
+      "title": "Expected result",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "You should be able to identify the correct area for your next task. Confirm the wording and expected navigation path with the product team before publishing this article."
+        }
+      ]
+    }
+  ]
+}
+

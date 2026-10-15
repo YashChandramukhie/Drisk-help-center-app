@@ -1,0 +1,50 @@
+{
+  "id": "understand-framework-requirements",
+  "slug": "understand-framework-requirements",
+  "collectionId": "frameworks-and-requirements",
+  "type": "concept",
+  "title": "Understand framework requirements",
+  "summary": "A draft explanation of how to read and interpret requirements within a selected framework.",
+  "keywords": [
+    "framework",
+    "requirements",
+    "applicability",
+    "compliance"
+  ],
+  "status": "draft",
+  "relatedArticleIds": [
+    "view-and-select-compliance-framework",
+    "create-customer-defined-control",
+    "map-controls-to-requirements"
+  ],
+  "contentOwner": "To be assigned",
+  "lastReviewedDate": null,
+  "sections": [
+    {
+      "id": "definition",
+      "title": "Definition",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "A framework requirement describes an expectation that an organisation may need to address. The exact fields, labels, identifiers, and applicability rules in DRisk must be confirmed from the product and framework source."
+        }
+      ]
+    },
+    {
+      "id": "how-it-works",
+      "title": "How it works in DRisk",
+      "blocks": [
+        {
+          "type": "ordered-list",
+          "items": [
+            "Locate the selected framework and open the relevant requirement.",
+            "Read the requirement wording and any available context.",
+            "Identify the controls, activities, or evidence that may address the requirement.",
+            "Record questions when the requirement needs interpretation or product-team confirmation."
+          ]
+        }
+      ]
+    }
+  ]
+}
+

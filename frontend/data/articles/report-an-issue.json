@@ -1,0 +1,72 @@
+{
+  "id": "report-an-issue",
+  "slug": "report-an-issue",
+  "collectionId": "troubleshooting-and-support",
+  "type": "troubleshooting",
+  "title": "Report an issue",
+  "summary": "A draft guide for collecting useful, non-sensitive information when an action fails or the platform behaves unexpectedly.",
+  "keywords": [
+    "issue",
+    "error",
+    "support",
+    "troubleshooting",
+    "problem"
+  ],
+  "status": "draft",
+  "relatedArticleIds": [
+    "navigate-drisk-dashboard",
+    "understand-users-roles-permissions",
+    "upload-and-link-evidence"
+  ],
+  "contentOwner": null,
+  "lastReviewedDate": null,
+  "sections": [
+    {
+      "id": "problem",
+      "title": "Problem",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "An action fails, an expected record is unavailable or the platform behaves differently from the reviewed guidance. The cause may relate to permissions, validation, the selected organisation, a connection problem or product behaviour."
+        }
+      ]
+    },
+    {
+      "id": "recommended-checks",
+      "title": "Recommended checks",
+      "blocks": [
+        {
+          "type": "ordered-list",
+          "items": [
+            "Read and record the exact error message, if any.",
+            "Confirm the organisation and record involved.",
+            "Check your permissions and any documented field or upload requirements.",
+            "Before retrying an action that creates or updates a record, check whether the first attempt succeeded.",
+            "Consult the relevant reviewed Help Centre article.",
+            "If unresolved, use the approved support channel when it has been supplied."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "information-to-include",
+      "title": "Information to include",
+      "blocks": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "What you intended to do and the steps you took.",
+            "What you expected and what happened instead.",
+            "The approximate time and timezone, browser details, and a non-sensitive record identifier if permitted.",
+            "A sanitised screenshot when it helps explain the issue."
+          ]
+        },
+        {
+          "type": "paragraph",
+          "text": "Never include passwords, session tokens or confidential customer files in a routine issue report. Use the organisation's approved incident process for suspected security or privacy incidents."
+        }
+      ]
+    }
+  ]
+}
+

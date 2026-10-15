@@ -1,0 +1,57 @@
+{
+  "id": "drisk-platform-terminology",
+  "slug": "drisk-platform-terminology",
+  "collectionId": "platform-basics",
+  "type": "concept",
+  "title": "DRisk platform terminology",
+  "summary": "A glossary placeholder for the terms customers need when working with DRisk.",
+  "keywords": [
+    "terminology",
+    "glossary",
+    "framework",
+    "control",
+    "evidence",
+    "readiness"
+  ],
+  "status": "draft",
+  "relatedArticleIds": [
+    "welcome-to-drisk",
+    "understand-framework-requirements",
+    "review-compliance-readiness"
+  ],
+  "contentOwner": "To be assigned",
+  "lastReviewedDate": null,
+  "sections": [
+    {
+      "id": "definition",
+      "title": "Definition",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "This article will define the key terms used in the DRisk interface and documentation. The definitions below are placeholders and must be checked against the approved product vocabulary."
+        },
+        {
+          "type": "bullet-list",
+          "items": [
+            "Framework: the confirmed term for a structured set of compliance requirements.",
+            "Requirement: the confirmed term for an expectation that an organisation may need to address.",
+            "Control: the confirmed term for an action, measure, or practice used to address a requirement.",
+            "Evidence: the confirmed term for information that supports a control or assessment.",
+            "Readiness: the confirmed term for the organisation's view of its current compliance position."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "why-it-matters",
+      "title": "Why it matters",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Using consistent terms helps teams discuss compliance work clearly and makes it easier to connect requirements, controls, evidence, and readiness reviews."
+        }
+      ]
+    }
+  ]
+}
+

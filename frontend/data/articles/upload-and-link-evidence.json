@@ -1,0 +1,55 @@
+{
+  "id": "upload-and-link-evidence",
+  "slug": "upload-and-link-evidence",
+  "collectionId": "policies-and-evidence",
+  "type": "instructional",
+  "title": "Upload and link evidence",
+  "summary": "A draft guide for adding evidence and connecting it to the relevant compliance work.",
+  "keywords": [
+    "evidence",
+    "upload",
+    "link evidence",
+    "documents"
+  ],
+  "status": "draft",
+  "relatedArticleIds": [
+    "create-customer-defined-control",
+    "map-controls-to-requirements",
+    "review-compliance-readiness"
+  ],
+  "contentOwner": "To be assigned",
+  "lastReviewedDate": null,
+  "sections": [
+    {
+      "id": "prerequisites",
+      "title": "Prerequisites",
+      "blocks": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "Use an approved document or record that supports the relevant compliance work.",
+            "Check that the evidence does not contain information that your organisation should not upload.",
+            "Confirm the control, requirement, or assessment item to which the evidence should be linked."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "steps",
+      "title": "Steps",
+      "blocks": [
+        {
+          "type": "ordered-list",
+          "items": [
+            "Open the approved DRisk area for managing evidence.",
+            "Choose the workflow for adding a document or evidence record.",
+            "Provide the information requested by your configured workflow and add the approved file if appropriate.",
+            "Link the evidence to the relevant control, requirement, or assessment item.",
+            "Review the saved record and confirm that the link is understandable to another reviewer."
+          ]
+        }
+      ]
+    }
+  ]
+}
+

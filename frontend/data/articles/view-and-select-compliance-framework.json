@@ -1,0 +1,54 @@
+{
+  "id": "view-and-select-compliance-framework",
+  "slug": "view-and-select-compliance-framework",
+  "collectionId": "frameworks-and-requirements",
+  "type": "instructional",
+  "title": "View and select a compliance framework",
+  "summary": "A draft guide for reviewing available frameworks and recording the appropriate selection.",
+  "keywords": [
+    "framework",
+    "select framework",
+    "compliance",
+    "requirements"
+  ],
+  "status": "draft",
+  "relatedArticleIds": [
+    "understand-framework-requirements",
+    "welcome-to-drisk"
+  ],
+  "contentOwner": "To be assigned",
+  "lastReviewedDate": null,
+  "sections": [
+    {
+      "id": "prerequisites",
+      "title": "Prerequisites",
+      "blocks": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "Know which regulatory, contractual, or internal requirement your organisation is addressing.",
+            "Confirm which person is responsible for choosing the framework.",
+            "Have the approved framework list or product guidance available."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "steps",
+      "title": "Steps",
+      "blocks": [
+        {
+          "type": "ordered-list",
+          "items": [
+            "Open the part of DRisk where available frameworks are shown.",
+            "Review the framework names, descriptions, and applicability information shown in your environment.",
+            "Compare the available options with your organisation's confirmed needs.",
+            "Select the appropriate framework using the approved product workflow.",
+            "Record any decision or follow-up required by your internal process."
+          ]
+        }
+      ]
+    }
+  ]
+}
+

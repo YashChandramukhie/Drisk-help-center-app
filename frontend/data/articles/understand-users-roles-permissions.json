@@ -1,0 +1,49 @@
+{
+  "id": "understand-users-roles-permissions",
+  "slug": "understand-users-roles-permissions",
+  "collectionId": "platform-basics",
+  "type": "concept",
+  "title": "Understand users, roles and permissions",
+  "summary": "A draft explanation of how access concepts may be documented for DRisk users.",
+  "keywords": [
+    "users",
+    "roles",
+    "permissions",
+    "access"
+  ],
+  "status": "draft",
+  "relatedArticleIds": [
+    "navigate-drisk-dashboard",
+    "welcome-to-drisk"
+  ],
+  "contentOwner": "To be assigned",
+  "lastReviewedDate": null,
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "User, role, and permission information should explain who can access the platform and which work each person is expected to perform. The available roles and exact permission boundaries must be confirmed for the customer's DRisk configuration."
+        }
+      ]
+    },
+    {
+      "id": "questions-to-confirm",
+      "title": "Questions to confirm",
+      "blocks": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "Which user types or roles are available?",
+            "Which areas can each role view or update?",
+            "Who can invite, deactivate, or manage users?",
+            "How should a user request access or report an access problem?"
+          ]
+        }
+      ]
+    }
+  ]
+}
+

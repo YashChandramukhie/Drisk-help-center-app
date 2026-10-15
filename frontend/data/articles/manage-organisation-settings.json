@@ -1,0 +1,60 @@
+{
+  "id": "manage-organisation-settings",
+  "slug": "manage-organisation-settings",
+  "collectionId": "settings-and-administration",
+  "type": "instructional",
+  "title": "Manage organisation settings",
+  "summary": "A draft guide for reviewing and updating organisational information that your account is authorised to manage.",
+  "keywords": [
+    "organisation",
+    "settings",
+    "administration",
+    "configuration"
+  ],
+  "status": "draft",
+  "relatedArticleIds": [
+    "understand-users-roles-permissions",
+    "navigate-drisk-dashboard"
+  ],
+  "contentOwner": null,
+  "lastReviewedDate": null,
+  "sections": [
+    {
+      "id": "purpose",
+      "title": "Purpose",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "Review and update the organisational information your account is authorised to manage. Some settings may affect other users or compliance records, so confirm the impact before saving."
+        }
+      ]
+    },
+    {
+      "id": "steps",
+      "title": "Proposed steps to verify",
+      "blocks": [
+        {
+          "type": "ordered-list",
+          "items": [
+            "Confirm the organisation or workspace you are working in.",
+            "Open the confirmed settings navigation.",
+            "Review the current values and the fields your role is permitted to change.",
+            "Update only the approved information in the confirmed editable fields.",
+            "Save the change and check that the updated values are displayed."
+          ]
+        }
+      ]
+    },
+    {
+      "id": "troubleshooting",
+      "title": "Troubleshooting",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "If a field is unavailable, check whether it is read-only or restricted to another role. If saving fails, record the validation message and check the documented field requirements."
+        }
+      ]
+    }
+  ]
+}
+

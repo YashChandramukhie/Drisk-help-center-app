@@ -1,0 +1,52 @@
+{
+  "id": "welcome-to-drisk",
+  "slug": "welcome-to-drisk",
+  "collectionId": "getting-started",
+  "type": "concept",
+  "title": "Welcome to DRisk",
+  "summary": "A short introduction to the DRisk compliance platform and the journey covered by this Help Centre.",
+  "keywords": [
+    "welcome",
+    "introduction",
+    "compliance journey",
+    "getting started"
+  ],
+  "status": "draft",
+  "relatedArticleIds": [
+    "drisk-platform-terminology",
+    "navigate-drisk-dashboard"
+  ],
+  "contentOwner": "To be assigned",
+  "lastReviewedDate": null,
+  "sections": [
+    {
+      "id": "overview",
+      "title": "Overview",
+      "blocks": [
+        {
+          "type": "paragraph",
+          "text": "DRisk is a compliance platform intended to help organisations organise compliance work, understand requirements, manage controls and supporting evidence, and review readiness. This article is a draft placeholder for the approved product introduction."
+        },
+        {
+          "type": "paragraph",
+          "text": "The Help Centre follows a typical journey: understand the platform, select a framework, review requirements, define controls, add evidence, and assess readiness. The exact screens and workflow should be confirmed with the product team before publication."
+        }
+      ]
+    },
+    {
+      "id": "before-you-begin",
+      "title": "Before you begin",
+      "blocks": [
+        {
+          "type": "bullet-list",
+          "items": [
+            "Confirm that you have access to the DRisk environment provided by your organisation.",
+            "Ask your organisation which compliance framework and terminology apply to your work.",
+            "Use the approved product guide or a reviewed screenshot to replace this sample wording."
+          ]
+        }
+      ]
+    }
+  ]
+}
+
