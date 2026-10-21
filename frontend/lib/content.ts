@@ -1,7 +1,7 @@
 import { existsSync, readFileSync } from "node:fs";
 import path from "node:path";
 
-export type ArticleStatus = "draft" | "published";
+export type ArticleStatus = "draft" | "review" | "published" | "hold";
 export type ArticleType = "instructional" | "concept" | "troubleshooting";
 
 export type ContentBlock =
@@ -50,7 +50,7 @@ export interface HelpCentreData {
 }
 
 const articleTypes: ArticleType[] = ["instructional", "concept", "troubleshooting"];
-const articleStatuses: ArticleStatus[] = ["draft", "published"];
+export const articleStatuses: ArticleStatus[] = ["draft", "review", "published", "hold"];
 
 function isObject(value: unknown): value is Record<string, unknown> {
   return typeof value === "object" && value !== null;
@@ -114,7 +114,7 @@ function validateContentBlock(value: unknown, label: string): ContentBlock {
   throw new Error("Help Centre content: " + label + ".type is not supported.");
 }
 
-function validateData(value: unknown, articleLabels: string[] = []): HelpCentreData {
+export function validateData(value: unknown, articleLabels: string[] = []): HelpCentreData {
   if (!isObject(value) || !isObject(value.site) || !Array.isArray(value.collections) || !Array.isArray(value.articles)) {
     throw new Error("Help Centre content must contain site, collections and articles.");
   }
@@ -291,20 +291,27 @@ export const helpCentre = readManifest();
 export const publishedArticles = helpCentre.articles.filter((article) => article.status === "published");
 
 export const isDevelopmentPreview = process.env.NODE_ENV === "development";
-export const visibleArticles = isDevelopmentPreview ? helpCentre.articles : publishedArticles;
-
-export function getCollectionArticleCount(collectionId: string): number {
-  return visibleArticles.filter((article) => article.collectionId === collectionId).length;
+export function filterVisibleArticles(articles: HelpCentreArticle[], developmentPreview: boolean): HelpCentreArticle[] {
+  return developmentPreview ? articles : articles.filter((article) => article.status === "published");
 }
 
-export function getVisibleArticlesForCollection(collectionId: string): HelpCentreArticle[] {
-  return visibleArticles.filter((article) => article.collectionId === collectionId);
+export const visibleArticles = filterVisibleArticles(helpCentre.articles, isDevelopmentPreview);
+
+export function getCollectionArticleCount(collectionId: string, articles: HelpCentreArticle[] = visibleArticles): number {
+  return articles.filter((article) => article.collectionId === collectionId).length;
+}
+
+export function getVisibleArticlesForCollection(
+  collectionId: string,
+  articles: HelpCentreArticle[] = visibleArticles,
+): HelpCentreArticle[] {
+  return articles.filter((article) => article.collectionId === collectionId);
 }
 
 export function getCollection(collectionId: string): HelpCentreCollection | undefined {
   return helpCentre.collections.find((collection) => collection.id === collectionId);
 }
 
-export function getVisibleArticle(slug: string): HelpCentreArticle | undefined {
-  return visibleArticles.find((article) => article.slug === slug);
+export function getVisibleArticle(slug: string, articles: HelpCentreArticle[] = visibleArticles): HelpCentreArticle | undefined {
+  return articles.find((article) => article.slug === slug);
 }
