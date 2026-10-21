@@ -49,9 +49,9 @@ export default async function ArticlePage({
           <article>
             <div className="flex flex-wrap items-center gap-3">
               <p className="text-sm font-semibold uppercase tracking-widest text-P-600">{article.type}</p>
-              {article.status === "draft" && (
+              {article.status !== "published" && (
                 <span className="rounded-full bg-amber-100 px-2.5 py-1 text-xs font-semibold text-amber-900">
-                  Draft preview
+                  {article.status[0].toUpperCase() + article.status.slice(1)} preview
                 </span>
               )}
             </div>

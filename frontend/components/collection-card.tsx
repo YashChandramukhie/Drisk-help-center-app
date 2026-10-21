@@ -7,7 +7,7 @@ export function CollectionCard({ collection, articleCount, articles }: {
   articleCount: number;
   articles?: HelpCentreArticle[];
 }) {
-  const hasDrafts = articles?.some((article) => article.status === "draft") ?? false;
+  const hasUnpublishedArticles = articles?.some((article) => article.status !== "published") ?? false;
 
   return (
     <details className="group rounded-xl border border-N-200 bg-white shadow-base">
@@ -20,7 +20,7 @@ export function CollectionCard({ collection, articleCount, articles }: {
         {articleCount > 0 ? (
           <>
             <p className="text-sm leading-6 text-N-600">
-              {articleCount} {hasDrafts ? "" : "published "}{articleCount === 1 ? "article" : "articles"} available.
+              {articleCount} {hasUnpublishedArticles ? "" : "published "}{articleCount === 1 ? "article" : "articles"} available.
             </p>
             {articles && (
               <ul className="mt-4 space-y-3">
@@ -32,9 +32,9 @@ export function CollectionCard({ collection, articleCount, articles }: {
                     >
                       {article.title}
                     </Link>
-                    {article.status === "draft" && (
+                    {article.status !== "published" && (
                       <span className="ml-2 inline-flex rounded-full bg-amber-100 px-2 py-0.5 text-xs font-semibold text-amber-900">
-                        Draft
+                        {article.status[0].toUpperCase() + article.status.slice(1)}
                       </span>
                     )}
                     <p className="mt-1 text-sm leading-6 text-N-600">{article.summary}</p>

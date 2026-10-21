@@ -63,9 +63,9 @@ export function SearchBar({ articles, showDrafts }: { articles: HelpCentreArticl
                     className="block rounded-lg p-3 hover:bg-P-50"
                   >
                     <span className="block font-semibold text-N-900">{article.title}</span>
-                    {showDrafts && article.status === "draft" && (
+                    {showDrafts && article.status !== "published" && (
                       <span className="mt-1 inline-flex rounded-full bg-amber-100 px-2 py-0.5 text-xs font-semibold text-amber-900">
-                        Draft
+                        {article.status[0].toUpperCase() + article.status.slice(1)}
                       </span>
                     )}
                     <span className="mt-1 block text-sm leading-5 text-N-600">{article.summary}</span>

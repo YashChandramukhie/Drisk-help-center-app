@@ -51,11 +51,11 @@ To add an article:
 1. Create a new JSON file in data/articles/ using a unique article ID as the filename.
 2. Add its relative path, such as articles/new-article.json, to articleFiles in data/help-centre.json.
 3. Use a unique ID and slug, a valid collection ID, and one of the supported types: concept, instructional, or troubleshooting.
-4. Use "status": "draft", "contentOwner": null and "lastReviewedDate": null until the article is reviewed.
+4. Use one of the supported statuses: "draft", "review", "published", or "hold". Use "contentOwner": null and "lastReviewedDate": null until the article is reviewed.
 5. Use only existing article IDs in relatedArticleIds; those links are shown only when the related article is published.
 6. Add approved screenshots under public/ and use supported image blocks with descriptive alt text.
 
-Changing a status to "published" makes the article eligible for production static routes, collection lists and browser search after the next build. During `npm run dev`, the shared visible-content helper includes drafts for local review. The site shows a development-preview notice and Draft labels, including in search results. Production builds use published articles only, and draft article bodies are filtered before route generation and client props.
+Changing a status to "published" makes the article eligible for production static routes, collection lists, navigation, related articles, counts and browser search after the next build. During `npm run dev`, the shared visible-content helper includes all four statuses for local review. The site shows a development-preview notice and status labels for unpublished articles. Production builds use published articles only, and unpublished article bodies are filtered before route generation and client props.
 
 The terminology article is available during local development at `/articles/drisk-platform-terminology/`. Draft preview is development-only; do not publish an article solely to preview it.
 
