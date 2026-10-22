@@ -1,7 +1,7 @@
 {
   "id": "report-an-issue",
   "slug": "report-an-issue",
-  "collectionId": "troubleshooting-and-support",
+  "collectionId": "troubleshooting-and-known-issues",
   "type": "troubleshooting",
   "title": "Report an issue",
   "summary": "A draft guide for collecting useful, non-sensitive information when an action fails or the platform behaves unexpectedly.",

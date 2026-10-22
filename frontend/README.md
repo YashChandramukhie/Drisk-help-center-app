@@ -29,6 +29,22 @@ The catalogue and site settings live in data/help-centre.json. It contains:
 - collections
 - articleFiles, with paths relative to the data/ directory
 
+The approved collection order and IDs are:
+
+1. Getting Started (`getting-started`)
+2. Users and Administration (`users-and-administration`)
+3. Frameworks, Scoping and Controls (`frameworks-scoping-and-controls`)
+4. Evidence (`evidence`)
+5. Audit Management (`audit-management`)
+6. Risk Management (`risk-management`)
+7. Document and Policy Management (`document-and-policy-management`)
+8. Tasks and Workflows (`tasks-and-workflows`)
+9. Integrations (`integrations`)
+10. Reports and Dashboards (`reports-and-dashboards`)
+11. Third-Party Risk Management (`third-party-risk-management`)
+12. Troubleshooting and Known Issues (`troubleshooting-and-known-issues`)
+13. Trust and Data Protection (`trust-and-data-protection`)
+
 Each article is stored in its own file under data/articles/. For example, edit the terminology article in [data/articles/drisk-platform-terminology.json](./data/articles/drisk-platform-terminology.json).
 
 The loader in lib/content.ts reads the manifest and article files only in the server/build environment. It validates:
@@ -54,6 +70,8 @@ To add an article:
 4. Use one of the supported statuses: "draft", "review", "published", or "hold". Use "contentOwner": null and "lastReviewedDate": null until the article is reviewed.
 5. Use only existing article IDs in relatedArticleIds; those links are shown only when the related article is published.
 6. Add approved screenshots under public/ and use supported image blocks with descriptive alt text.
+
+The prototype article `understand-assessments-and-tests.json` is preserved on disk but is temporarily excluded from `articleFiles` pending supervisor classification. It is not deleted or modified.
 
 Changing a status to "published" makes the article eligible for production static routes, collection lists, navigation, related articles, counts and browser search after the next build. During `npm run dev`, the shared visible-content helper includes all four statuses for local review. The site shows a development-preview notice and status labels for unpublished articles. Production builds use published articles only, and unpublished article bodies are filtered before route generation and client props.
 
