@@ -1,7 +1,7 @@
 {
   "id": "manage-organisation-settings",
   "slug": "manage-organisation-settings",
-  "collectionId": "settings-and-administration",
+  "collectionId": "users-and-administration",
   "type": "instructional",
   "title": "Manage organisation settings",
   "summary": "A draft guide for reviewing and updating organisational information that your account is authorised to manage.",

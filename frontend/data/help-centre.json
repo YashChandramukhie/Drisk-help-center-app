@@ -9,47 +9,67 @@
     {
       "id": "getting-started",
       "title": "Getting Started",
-      "description": "Set up your organisation and begin using DRisk."
+      "description": "Start using DRisk and find introductory guidance."
     },
     {
-      "id": "platform-basics",
-      "title": "Platform Basics",
-      "description": "Learn about navigation, terminology, roles and permissions."
+      "id": "users-and-administration",
+      "title": "Users and Administration",
+      "description": "Guidance about users, roles and organisation administration."
     },
     {
-      "id": "frameworks-and-requirements",
-      "title": "Frameworks and Requirements",
-      "description": "Select frameworks and understand applicable requirements."
+      "id": "frameworks-scoping-and-controls",
+      "title": "Frameworks, Scoping and Controls",
+      "description": "Guidance about frameworks, scope and controls."
     },
     {
-      "id": "controls-and-activities",
-      "title": "Controls and Activities",
-      "description": "Create, assign and manage organisational controls."
+      "id": "evidence",
+      "title": "Evidence",
+      "description": "Guidance about evidence and its links to controls."
     },
     {
-      "id": "policies-and-evidence",
-      "title": "Policies and Evidence",
-      "description": "Maintain documented information supporting compliance."
+      "id": "audit-management",
+      "title": "Audit Management",
+      "description": "Guidance about audit preparation and readiness."
     },
     {
-      "id": "assessments-and-tests",
-      "title": "Assessments and Tests",
-      "description": "Evaluate whether controls are implemented and effective."
+      "id": "risk-management",
+      "title": "Risk Management",
+      "description": "Guidance about risk management."
     },
     {
-      "id": "readiness-and-audits",
-      "title": "Readiness and Audits",
-      "description": "Identify gaps and prepare for audit activities."
+      "id": "document-and-policy-management",
+      "title": "Document and Policy Management",
+      "description": "Guidance about documents and policies."
     },
     {
-      "id": "settings-and-administration",
-      "title": "Settings and Administration",
-      "description": "Manage users, roles, notifications and organisation settings."
+      "id": "tasks-and-workflows",
+      "title": "Tasks and Workflows",
+      "description": "Guidance about tasks and workflows."
     },
     {
-      "id": "troubleshooting-and-support",
-      "title": "Troubleshooting and Support",
-      "description": "Resolve common issues or obtain additional assistance."
+      "id": "integrations",
+      "title": "Integrations",
+      "description": "Guidance about integrations."
+    },
+    {
+      "id": "reports-and-dashboards",
+      "title": "Reports and Dashboards",
+      "description": "Guidance about reports and dashboards."
+    },
+    {
+      "id": "third-party-risk-management",
+      "title": "Third-Party Risk Management",
+      "description": "Guidance about third-party risk management."
+    },
+    {
+      "id": "troubleshooting-and-known-issues",
+      "title": "Troubleshooting and Known Issues",
+      "description": "Guidance about troubleshooting and known issues."
+    },
+    {
+      "id": "trust-and-data-protection",
+      "title": "Trust and Data Protection",
+      "description": "Guidance about trust and data protection."
     }
   ],
   "articleFiles": [
@@ -63,7 +83,6 @@
     "articles/map-controls-to-requirements.json",
     "articles/upload-and-link-evidence.json",
     "articles/review-compliance-readiness.json",
-    "articles/understand-assessments-and-tests.json",
     "articles/manage-organisation-settings.json",
     "articles/report-an-issue.json"
   ]

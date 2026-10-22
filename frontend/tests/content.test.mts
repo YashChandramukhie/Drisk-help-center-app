@@ -5,6 +5,7 @@ import {
   getCollectionArticleCount,
   getVisibleArticle,
   getVisibleArticlesForCollection,
+  helpCentre,
   validateData,
 } from "../lib/content.ts";
 import type { HelpCentreArticle } from "../lib/content.ts";
@@ -75,4 +76,58 @@ test("production filtering applies to pages, navigation, search inputs, related 
   assert.equal(getVisibleArticle("published", productionArticles)?.status, "published");
   assert.deepEqual(getVisibleArticlesForCollection("collection", productionArticles), [articles[2]]);
   assert.equal(getCollectionArticleCount("collection", productionArticles), 1);
+});
+
+test("uses the approved collection order and canonical IDs", () => {
+  assert.deepEqual(
+    helpCentre.collections.map((collection) => collection.id),
+    [
+      "getting-started",
+      "users-and-administration",
+      "frameworks-scoping-and-controls",
+      "evidence",
+      "audit-management",
+      "risk-management",
+      "document-and-policy-management",
+      "tasks-and-workflows",
+      "integrations",
+      "reports-and-dashboards",
+      "third-party-risk-management",
+      "troubleshooting-and-known-issues",
+      "trust-and-data-protection",
+    ],
+  );
+});
+
+test("uses confirmed active article mappings and excludes assessments from the manifest", () => {
+  const collectionByArticleId = new Map(helpCentre.articles.map((article) => [article.id, article.collectionId]));
+
+  assert.deepEqual(Object.fromEntries(collectionByArticleId), {
+    "welcome-to-drisk": "getting-started",
+    "drisk-platform-terminology": "getting-started",
+    "navigate-drisk-dashboard": "getting-started",
+    "understand-users-roles-permissions": "users-and-administration",
+    "view-and-select-compliance-framework": "frameworks-scoping-and-controls",
+    "understand-framework-requirements": "frameworks-scoping-and-controls",
+    "create-customer-defined-control": "frameworks-scoping-and-controls",
+    "map-controls-to-requirements": "frameworks-scoping-and-controls",
+    "upload-and-link-evidence": "evidence",
+    "review-compliance-readiness": "audit-management",
+    "manage-organisation-settings": "users-and-administration",
+    "report-an-issue": "troubleshooting-and-known-issues",
+  });
+  assert.equal(collectionByArticleId.has("understand-assessments-and-tests"), false);
+});
+
+test("preserves IDs, slugs and draft statuses for active prototype articles", () => {
+  const expected = new Map([
+    ["manage-organisation-settings", "manage-organisation-settings"],
+    ["report-an-issue", "report-an-issue"],
+  ]);
+
+  for (const [id, slug] of expected) {
+    const article = helpCentre.articles.find((candidate) => candidate.id === id);
+    assert.equal(article?.slug, slug);
+    assert.equal(article?.status, "draft");
+  }
 });
